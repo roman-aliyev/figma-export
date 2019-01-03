@@ -41,6 +41,7 @@ def main():
     exporter_type = exporters_by_format.get(args.export_format)
     del args.export_format
     exporter_type(export_format, document_id)(**vars(args))
+    print("Done")
 
 
 if __name__ == '__main__':

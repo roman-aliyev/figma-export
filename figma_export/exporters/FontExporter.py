@@ -61,7 +61,7 @@ if __name__ == '__main__':
 
 
 class FontExporter(AbstractExporter):
-    """Exporter description"""
+    """Exports Figma document and saves the result to iconic font"""
     supported_formats = ["otf", "ttf", "woff"]
 
     class FontStyleArgument(str, AbstractExporter.AbstractArgument):
@@ -70,7 +70,7 @@ class FontExporter(AbstractExporter):
 
     class FontEmboldeningArgument(float, AbstractExporter.AbstractArgument):
         """makes glyphs wider or lighter by the number of em units. >=-1, <=1, default=0."""
-        default = "0"
+        default = 0
 
     def __call__(
             self,

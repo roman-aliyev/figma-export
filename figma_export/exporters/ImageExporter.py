@@ -4,7 +4,7 @@ from .AbstractExporter import AbstractExporter
 
 
 class ImageExporter(AbstractExporter):
-    """Exporter description"""
+    """Exports Figma document and saves the result to image files"""
     supported_formats = ["png", "jpg", "svg"]
 
     def __call__(
@@ -25,6 +25,9 @@ class ImageExporter(AbstractExporter):
             selector
         )
         for result in rendering_results:
-            path = os.path.join(f"{result.node.name}_x{result.scale}.{result.format}")
+            if result.scale == 1:
+                path = f"{result.node.name}.{result.format}"
+            else:
+                path = f"{result.node.name}_x{result.scale}.{result.format}"
             with open(path, "wb") as f:
                 f.write(result.data)

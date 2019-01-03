@@ -30,7 +30,7 @@ _contents_data = {
 
 
 class ImagesetExporter(AbstractExporter):
-    """Exporter description"""
+    """Exports Figma document and saves the result to Xcode Asset Catalog"""
     supported_formats = ["imageset"]
 
     def __call__(
