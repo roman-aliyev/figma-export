@@ -11,15 +11,17 @@ Can export any Figma document as:
 
 ## Installation
 
-- (Required) Install **Python >=3.7**.
+- Install **Python >=3.7**.
 
-- (Required) Install Figma Export package:
+- Mac users must install Certificates for the ssl module (execute command script included in /Applications/Python).
+
+- Install Figma Export package:
 
 ```
-$ pip install git+https://github.com/RomanAliyev/figma-export.git
+$ python3 -m pip install --upgrade figma_export
 ```
 
-- (Required) Set an environment variable ```FIGMA_ACCESS_TOKEN``` to your [personal access token](https://www.figma.com/developers/docs#auth).
+- Set an environment variable ```FIGMA_ACCESS_TOKEN``` to your [personal access token](https://www.figma.com/developers/docs#auth).
 
 - (Optional) ```otf```, ```ttf``` and ```woff``` commands require the FontForge command-line interface. Run this command ```$ fontforge -c "print('FontForge is ready')"``` to test FontForge installation on your local machine:
 
@@ -29,25 +31,25 @@ $ pip install git+https://github.com/RomanAliyev/figma-export.git
 Export all components as PNG files:
 
 ```
-$ python -m figma_export png DOCUMENT_ID
+$ figma_export png DOCUMENT_ID
 ```
 
 Export all components as Xcode Asset Catalog:
 
 ```
-$ python -m figma_export imageset DOCUMENT_ID
+$ figma_export imageset DOCUMENT_ID
 ```
 
-Export specific components in the Figma document:
+Export specific components:
 
 ```
-$ python -m figma_export png DOCUMENT_ID -select "/Document/Page 1/Navigation Icons"
+$ figma_export png DOCUMENT_ID -select "/Document/Page 1"
 ```
 
 Export components as iconic font:
 
 ```
-$ python -m figma_export otf DOCUMENT_ID
+$ figma_export otf DOCUMENT_ID
 ```
 
 Each font glyph is coded by first char from the name of the corresponding component. 

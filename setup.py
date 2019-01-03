@@ -13,4 +13,14 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/RomanAliyev/figma-export",
+    classifiers=[
+        "Programming Language :: Python :: 3.7",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
+    entry_points={
+        "console_scripts": [
+            "figma_export = figma_export.__main__:main"
+        ]
+    }
 )
