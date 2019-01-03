@@ -18,7 +18,7 @@ Can export any Figma document as:
 - Install Figma Export package:
 
 ```
-$ python3 -m pip install --upgrade figma_export
+$ pip install figma_export
 ```
 
 - Set an environment variable ```FIGMA_ACCESS_TOKEN``` to your [personal access token](https://www.figma.com/developers/docs#auth).
