@@ -13,7 +13,7 @@ Can export any Figma document as:
 
 - Install **Python >=3.7**.
 
-- Mac users must install Certificates for the ssl module (execute command script included in /Applications/Python).
+- Mac users must install certificates for the ssl module (execute command script included in /Applications/Python).
 
 - Install Figma Export package:
 
