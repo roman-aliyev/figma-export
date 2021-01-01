@@ -9,7 +9,6 @@ Allows to export your Figma components as:
 - Image files (```png```, ```jpg```, ```svg```).
 - Xcode Asset Catalog (```imageset``` files).
 - Iconic font (```otf```, ```ttf```, ```woff```).
-- Cooming soon...
 
 ## Installation
 
