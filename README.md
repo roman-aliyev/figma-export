@@ -22,7 +22,7 @@ Allows to export your Figma components as:
 $ pip install figma_export
 ```
 
-- Set an environment variable ```FIGMA_ACCESS_TOKEN``` to your [personal access token](https://www.figma.com/developers/docs#auth).
+- Set an environment variable ```FIGMA_ACCESS_TOKEN``` to your [personal access token](https://www.figma.com/developers/api#access-tokens).
 
 - (Optional) ```otf```, ```ttf``` and ```woff``` commands require the FontForge command-line interface. Run this command to check the FontForge installation on your local machine:
 
