@@ -19,7 +19,7 @@ Allows to export your Figma components as:
 - Install Figma Export package:
 
 ```
-$ pip install figma_export
+$ pip install git+https://github.com/roman-aliyev/figma-export
 ```
 
 - Set an environment variable ```FIGMA_ACCESS_TOKEN``` to your [personal access token](https://www.figma.com/developers/api#access-tokens).
